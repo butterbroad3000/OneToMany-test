@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "0cce18ea-a004-4b4c-96dd-a5a657835ad2",
+		"name": "Clients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20490322"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"name\":\"ar\",\r\n\r\n \"adress\":\"Cherry sreet\",\r\n  \"balance\":10000,\r\n  \"mail\":\"fruct@re\"\r\n        \r\n           }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/deletClient/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deletClient",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"name\":\"artem\",\r\n    \"adress\" : \"Panchenko\",\r\n     \"balance\":\"23\",\r\n    \"mail\":\"jeka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\r\n      \"name\":\"artem\",\r\n    \"adress\" : \"Panc\",\r\n     \"balance\":\"34\",\r\n    \"mail\":\"jeka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

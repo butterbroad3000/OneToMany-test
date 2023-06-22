@@ -1,0 +1,25 @@
+Данный проект представляет из себя Restful приложение  с 2- мя сущностями Client  Order реализована связь One To Many(у 1 клиента может быть несколько заказов)
+У каждого объекта имеется 5 свойств и 4 метода (CRUD) для получения объектов, удаления, оздания и обновления объекта
+Для запуска приложения необходимо в MySql создать БД с именем db1
+Соединение происходит по порту 8080
+подклюючены зависимости starter-web для работы с веб-приложением, spring-data jpa и MySql- conector для работы с бл и использованием готовых методов для работы с бд а также lombok чтобы облегчить процесс написания рутинного кода
+Для отправки запросов используется postman
+Пример заполнения полей Client
+{
+      "name":"artem",
+    "adress" : "Panchenko",
+     "balance":"23",
+    "mail":"jeka"
+}
+Запросы для Client:
+
+GET: http://localhost:8080/all - получение всех клиентов
+DELETE: http://localhost:8080/deleteClient/[id] - удаление клиента по id
+PUT:http://localhost:8080/update/[id]- редактирование клиента
+POST:    http://localhost:8080/createClient- добавдение клиента
+Запросы для Order:
+
+GET:http://localhost:8080/allOrders- получение всех заказов
+DELETE: http://localhost:8080/deleteOrder/[id] - удаление заказа по id
+POST:http://localhost:8080/createOrder/[client_id]-создание заказа
+PUT:http://localhost:8080/updateOrder/[OrderId]/[ClientI]- обовление заказа
